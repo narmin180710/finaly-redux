@@ -22,4 +22,6 @@ return (
 );
 }
 
+//git config --global user.token "ghp_nLS2pb7M0kzigBdMpZ2i6CE9S3hqVj40FC70"
+
 export default App;
