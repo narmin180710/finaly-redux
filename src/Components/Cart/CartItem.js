@@ -3,10 +3,9 @@ import itemsData from "../../data/dataItems";
 import { removeItemFromCart } from "../../redux/cartSlice";
 
 const CartItem = ({cartItem}) => {
-    console.log(cartItem)
     const items = itemsData.find(item => item.id === cartItem.itemId);
     const dispatch = useDispatch();
-    return(<div>
+    return(<div key={cartItem}>
         <img src={`${items.img}.jpg`} alt="img"/>
         <p className="names">{items.name}</p>
         <p>{cartItem.quantity} portion(s)</p>

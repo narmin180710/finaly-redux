@@ -12,9 +12,8 @@ const Item = ({item}) => {
         <p className="price">$ {item.price}</p>
         <div className="left">
         <ChangeQuantity quantity={quantity} setQuantity={setQuantity}/>
-        <button onClick={() => {dispatch(addItemToCart({item, quantity}))}} class="glow-on-hover" type="button">Add to cart</button>
+        <button onClick={() => {dispatch(addItemToCart({item, quantity}))}} className="glow-on-hover" type="button">Add to cart</button>
         </div>
-        {/* <button onClick={() => {dispatch(addItemToCart({item, quantity}))}}></button> */}
     </div>)
 }
 

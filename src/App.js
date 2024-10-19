@@ -6,12 +6,10 @@ import Items from './Components/ItemsComponents/Items';
 function App() {
 return (
 <div>
+<nav className='nav'>
+  <header className='item'>Wildberries</header>
+</nav>
 
-<div>
-  <nav className='nav'>
-      <h1 className='item'>Wildberries</h1>
-  </nav>
-</div>
 
 <div>
 <div className='App'>
